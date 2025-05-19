@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    margin: 20px 0px 0px 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    height: 45px;
+}
+.list-item{
+    display: inline;
+    margin: 0px 15px;
+}
+.list-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: medium;
+}
+.list-item a:hover{
+    text-decoration: underline;
+    color: brown;
+    font-size: 17px;
+}
+.row{
+    display: flex;
+    margin: 80px 0px 0px 0px;
+}
+.col-content h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+}
+#secondName{
+    color: brown;
+    letter-spacing: 10px;
+}
+.col-content p{
+    margin: 10px 0px 40px 0px;
+    text-align: justify;
+}
+.col-content a{
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 10px;
+}
+.col-image{
+    position: relative;
+    height: 350px;
+}
+#home{
+    min-height: 350px;
+}
+/* .col-image{
+    transform: translateX(30%)
+} */
+.col-image img{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    transition: top 2s, left 1s;
+}
+.col-image #shape{
+    left: 50px;
+    /* height: 400px; */
+}
+/* .col-content #girl{
+    height: 600px;
+} */
+.col-image:hover #girl{
+    top: 20px;
+}
+.col-image:hover #shape{
+    left: 130px;
+}
+#about{
+    margin-top: 30px;
+}
+.centerDiv{
+    text-align: center;
+}
+.centerDiv h1{
+    font-size: 30px;
+}
+.centerDiv h4{
+    color: green;
+}
+.about-section{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 0px;
+}
+/* grid to display as rpws and colums, 1fr width of column, gove auto auto or 1fr 2fr (fraction) */
+.about-image img{
+    width: 80%;
+}
+.about-content{
+    margin-right: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+.skills-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.icon-container{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px 0px;
+}
+.icon-container a i{
+    color: black;
+    transition: 0.3s;
+}
+.icon-container a{
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.bars h1, .bars span{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.base-bar{
+    background-color: black;
+    height: 0.5rem;
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -20px;
+}
+.html-bar{
+    background-color: orange;
+    width: 90%;
+}
+.css-bar{
+    background-color: orange;
+    width: 82%;
+}
+.js-bar{
+    background-color: orange;
+    width: 37%;
+}
+.react-bar{
+    background-color: orange;
+    width: 42%;
+}
+.icon-container a:hover{
+    color: aliceblue;
+    background-image: linear-gradient(to bottom right, red, yellow, green);
+    padding: 5px;
+    border-radius: 50%;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+.icon-container a:hover i{
+    color: rgb(2, 55, 101);
+        animation: rotate 3s;
+
+}
